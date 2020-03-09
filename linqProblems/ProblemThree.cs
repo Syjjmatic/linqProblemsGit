@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace linqProblems
 {
-    class Program
+    class ProblemThree
     {
-        static void Main(string[] args)
+        public ProblemThree()
         {
 
-            Console.ReadLine();
+        }
+
+        public void Run()
+        {
+
         }
     }
 }

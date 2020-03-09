@@ -8,15 +8,19 @@ namespace linqProblems
 {
     class ProblemOne
     {
+        List<string> words;
+        public ProblemOne()
+        {
+            words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
+        }
+
         public void Run()
         {
-            List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
             var wordsThatContainTh = words.Where(w => w.Contains("th"));
             foreach (string word in wordsThatContainTh)
             {
                 Console.WriteLine(word);
             }
-            Console.ReadLine();
         }
     }
 }
