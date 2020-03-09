@@ -19,9 +19,11 @@ namespace linqProblems
             "98, 100, 66, 74, 55"};
         }
 
-        public void Run()
+        public double Run()
         {
-
+            var doublesList = classGrades.Select(x => x.Split(',').Select(y => Convert.ToDouble(y)).ToList().ToList()).Where(z => z.Remove(z.Min()));            
+            var average = doublesList.Select(x => x.Average()).Average();
+            return average;
         }
     }
 }
