@@ -15,14 +15,10 @@ namespace linqProblems
             names = new List<string>() { "Mike", "Brad", "Nevin", "Ian", "Mike" };
         }
 
-        public void Run()
+        public List<string> Run()
         {
-
-            var notDuplicate = names.Distinct();
-            foreach (string name in notDuplicate)
-            {
-                Console.WriteLine(name);
-            }
+            var notDuplicate = names.Distinct().ToList();
+            return notDuplicate;
         }
     }
 }

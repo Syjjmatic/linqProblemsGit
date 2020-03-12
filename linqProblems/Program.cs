@@ -10,8 +10,8 @@ namespace linqProblems
     {
         static void Main(string[] args)
         {
-            ProblemThree problemThree = new ProblemThree();
-            Console.WriteLine(problemThree.Run()); 
+            ProblemFour problemFour = new ProblemFour();
+            Console.WriteLine(problemFour.Run()); 
             Console.ReadLine();
         }
     }

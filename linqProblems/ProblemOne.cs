@@ -14,13 +14,10 @@ namespace linqProblems
             words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
         }
 
-        public void Run()
+        public List<string> Run()
         {
-            var wordsThatContainTh = words.Where(w => w.Contains("th"));
-            foreach (string word in wordsThatContainTh)
-            {
-                Console.WriteLine(word);
-            }
+            var wordsThatContainTh = words.Where(w => w.Contains("th")).ToList();
+            return wordsThatContainTh;
         }
     }
 }
